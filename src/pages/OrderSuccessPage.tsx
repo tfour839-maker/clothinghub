@@ -50,8 +50,7 @@ export default function OrderSuccessPage() {
             Thank You for Your Purchase!
           </h1>
           <p className="text-muted text-sm max-w-md mx-auto leading-relaxed">
-            Your order has been placed and payment received. A confirmation email with your invoice
-            and tracking details will be sent shortly.
+            Your order has been placed and payment received. Our team will process and ship your order within 24–48 hours.
           </p>
         </div>
 
@@ -153,7 +152,7 @@ export default function OrderSuccessPage() {
           </div>
           <ol className="space-y-3">
             {[
-              'An order confirmation email with your invoice will be sent within a few minutes.',
+              'Your order is confirmed and being prepared by our team.',
               'Our team will process and pack your order within 24–48 hours.',
               'Once shipped, a tracking link will be sent to your registered email.',
               'Estimated delivery across India is 3–5 business days.',
