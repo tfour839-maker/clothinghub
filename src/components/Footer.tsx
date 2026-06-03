@@ -119,7 +119,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-white/40 text-xs">
-              © {new Date().getFullYear()} Clothing Hub Pvt. Ltd. All rights reserved. CIN: U74999MH2024PTC123456 | GSTIN: 06GFWPB8226N1ZP
+              © {new Date().getFullYear()} Clothing Hub Pvt. Ltd. All rights reserved. CIN: U74999HR2024PTC123456 | GSTIN: 06GFWPB8226N1ZP
             </p>
 
             {/* Social Media */}

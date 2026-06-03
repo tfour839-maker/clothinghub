@@ -21,7 +21,7 @@ export default function TermsPage() {
             </p>
             <p className="mt-2">
               These Terms apply to all visitors, users, and others who access or use the Site. Clothing Hub is operated by 
-              Clothing Hub Pvt. Ltd., a company registered under the Companies Act, 2013, with CIN: U74999MH2024PTC123456 and GSTIN: 06GFWPB8226N1ZP, 
+              Clothing Hub Pvt. Ltd., a company registered under the Companies Act, 2013, with CIN: U74999HR2024PTC123456 and GSTIN: 06GFWPB8226N1ZP, 
               having its registered office at 102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122002, India.
             </p>
           </section>

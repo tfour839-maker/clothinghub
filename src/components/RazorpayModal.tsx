@@ -1,7 +1,30 @@
-import { useState } from 'react';
-import { X, Shield, Smartphone, CreditCard, Building2, ChevronRight } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
+
+declare global {
+  interface Window { Razorpay: any; }
+}
+
+// Replace with your live key before going live: rzp_live_XXXXXXXXXX
+const RAZORPAY_KEY = 'rzp_test_YOUR_KEY_HERE';
+
+function loadRazorpayScript(): Promise<boolean> {
+  return new Promise(resolve => {
+    if (window.Razorpay) { resolve(true); return; }
+    const existing = document.getElementById('rzp-checkout-script');
+    if (existing) {
+      existing.addEventListener('load', () => resolve(true));
+      return;
+    }
+    const script = document.createElement('script');
+    script.id = 'rzp-checkout-script';
+    script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+    script.onload = () => resolve(true);
+    script.onerror = () => resolve(false);
+    document.body.appendChild(script);
+  });
+}
 
 interface RazorpayModalProps {
   isOpen: boolean;
@@ -11,129 +34,102 @@ interface RazorpayModalProps {
 export default function RazorpayModal({ isOpen, onClose }: RazorpayModalProps) {
   const navigate = useNavigate();
   const { items, subtotal, shipping, tax, total, clearCart, closeCart } = useCart();
-  const [selectedMethod, setSelectedMethod] = useState<string | null>(null);
-  const [orderId] = useState(
-    () => `#VC-2026-${Math.floor(1000 + Math.random() * 9000)}`
-  );
+  const [status, setStatus] = useState<'idle' | 'loading' | 'error'>('idle');
+  const [errorMsg, setErrorMsg] = useState('');
+  const hasOpened = useRef(false);
+
+  const orderIdRef = useRef(`#CH-2026-${Math.floor(1000 + Math.random() * 9000)}`);
+
+  useEffect(() => {
+    if (!isOpen || hasOpened.current) return;
+    hasOpened.current = true;
+
+    setStatus('loading');
+
+    loadRazorpayScript().then(loaded => {
+      if (!loaded) {
+        setStatus('error');
+        setErrorMsg('Payment gateway could not be loaded. Please check your internet connection and try again.');
+        return;
+      }
+
+      const orderId = orderIdRef.current;
+      const orderSnapshot = { orderId, items: [...items], subtotal, shipping, tax, total };
+
+      const options = {
+        key: RAZORPAY_KEY,
+        amount: total * 100,
+        currency: 'INR',
+        name: 'Clothing Hub',
+        description: `Order ${orderId}`,
+        handler: (response: { razorpay_payment_id: string }) => {
+          clearCart();
+          closeCart();
+          onClose();
+          navigate('/order-success', {
+            state: { ...orderSnapshot, paymentId: response.razorpay_payment_id },
+          });
+        },
+        prefill: { name: '', email: '', contact: '' },
+        notes: { order_id: orderId },
+        theme: { color: '#072654' },
+        modal: {
+          ondismiss: () => {
+            hasOpened.current = false;
+            setStatus('idle');
+            onClose();
+          },
+        },
+      };
+
+      setStatus('idle');
+      const rzp = new window.Razorpay(options);
+      rzp.on('payment.failed', () => {
+        setStatus('error');
+        setErrorMsg('Payment failed. Please try a different payment method or contact your bank.');
+      });
+      rzp.open();
+    });
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) {
+      hasOpened.current = false;
+      setStatus('idle');
+      setErrorMsg('');
+    }
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
-  const paymentMethods = [
-    { id: 'upi', icon: Smartphone, label: 'UPI', desc: 'Google Pay, PhonePe, Paytm & more' },
-    { id: 'card', icon: CreditCard, label: 'Credit / Debit Card', desc: 'Visa, Mastercard, RuPay' },
-    { id: 'netbanking', icon: Building2, label: 'Net Banking', desc: 'All major Indian banks' },
-  ];
-
-  const handleSimulatePayment = () => {
-    const orderSnapshot = { orderId, items: [...items], subtotal, shipping, tax, total };
-    clearCart();
-    closeCart();
-    onClose();
-    navigate('/order-success', { state: orderSnapshot });
-  };
-
-  return (
-    <>
-      <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[110]" onClick={onClose} />
-
-      <div className="fixed inset-0 flex items-center justify-center z-[110] p-4">
-        <div
-          className="bg-white rounded-2xl w-full max-w-sm shadow-2xl overflow-hidden"
-          onClick={e => e.stopPropagation()}
-        >
-          {/* Razorpay Header */}
-          <div className="bg-[#072654] px-5 py-4 flex items-center justify-between">
-            <div>
-              <div className="flex items-baseline gap-1 mb-0.5">
-                <span className="text-white font-black text-xl tracking-tight">razorpay</span>
-                <span className="w-1.5 h-1.5 bg-[#2DD4BF] rounded-full mb-0.5" />
-              </div>
-              <p className="text-white/50 text-[11px] uppercase tracking-wider">Secure Payment Gateway</p>
-            </div>
-            <button
-              onClick={onClose}
-              className="text-white/50 hover:text-white transition-colors p-1.5 hover:bg-white/10 rounded-lg"
-              aria-label="Close"
-            >
-              <X size={18} />
-            </button>
-          </div>
-
-          {/* Amount Band */}
-          <div className="bg-[#0a2d6e] px-5 py-3.5 flex items-center justify-between">
-            <div>
-              <p className="text-white/50 text-[11px] uppercase tracking-wider mb-0.5">CLOTHING HUB</p>
-              <p className="text-white font-black text-2xl tracking-tight">
-                ₹{total.toLocaleString('en-IN')}
-              </p>
-            </div>
-            <div className="flex items-center gap-1.5 text-[10px] text-[#2DD4BF] bg-white/10 px-2.5 py-1.5 rounded-full">
-              <Shield size={10} />
-              <span className="font-medium">SSL Secured</span>
-            </div>
-          </div>
-
-          {/* Payment Methods */}
-          <div className="px-5 pt-5 pb-2">
-            <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-3">
-              Choose Payment Method
-            </p>
-            <div className="space-y-2">
-              {paymentMethods.map(({ id, icon: Icon, label, desc }) => (
-                <button
-                  key={id}
-                  onClick={() => setSelectedMethod(id)}
-                  className={`w-full flex items-center gap-3 p-3 border rounded-xl transition-all text-left group ${
-                    selectedMethod === id
-                      ? 'border-[#072654] bg-[#072654]/5 ring-1 ring-[#072654]/20'
-                      : 'border-gray-100 hover:border-[#072654]/30 hover:bg-gray-50/50'
-                  }`}
-                >
-                  <div
-                    className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${
-                      selectedMethod === id ? 'bg-[#072654]/10' : 'bg-gray-100 group-hover:bg-[#072654]/5'
-                    }`}
-                  >
-                    <Icon size={17} className={selectedMethod === id ? 'text-[#072654]' : 'text-gray-500'} />
-                  </div>
-                  <div className="flex-1">
-                    <p className={`text-sm font-semibold ${selectedMethod === id ? 'text-[#072654]' : 'text-gray-800'}`}>
-                      {label}
-                    </p>
-                    <p className="text-[11px] text-gray-400 mt-0.5">{desc}</p>
-                  </div>
-                  <ChevronRight size={15} className={selectedMethod === id ? 'text-[#072654]' : 'text-gray-300'} />
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Simulate Payment */}
-          <div className="px-5 pt-4 pb-5">
-            <div className="relative flex items-center mb-4">
-              <div className="flex-1 border-t border-gray-100" />
-              <span className="mx-3 text-[10px] text-gray-300 font-medium uppercase tracking-widest whitespace-nowrap">
-                Test Mode
-              </span>
-              <div className="flex-1 border-t border-gray-100" />
-            </div>
-
-            <button
-              onClick={handleSimulatePayment}
-              className="w-full bg-[#072654] hover:bg-[#0a2d6e] active:scale-[0.98] text-white font-bold py-3.5 rounded-xl transition-all text-sm tracking-wide shadow-lg shadow-[#072654]/20"
-            >
-              Simulate Successful Payment
-            </button>
-
-            <div className="flex items-center justify-center gap-1.5 mt-4">
-              <Shield size={11} className="text-gray-300" />
-              <span className="text-[10px] text-gray-300">
-                Secured by Razorpay · PCI DSS Level 1 Compliant
-              </span>
-            </div>
-          </div>
+  if (status === 'loading') {
+    return (
+      <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[110] flex items-center justify-center p-4">
+        <div className="bg-white rounded-2xl p-8 text-center max-w-xs w-full shadow-2xl">
+          <div className="w-10 h-10 border-4 border-[#072654] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+          <p className="text-sm font-semibold text-charcoal">Loading secure payment gateway…</p>
+          <p className="text-xs text-muted mt-1.5">Powered by Razorpay · PCI DSS Level 1</p>
         </div>
       </div>
-    </>
-  );
+    );
+  }
+
+  if (status === 'error') {
+    return (
+      <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[110] flex items-center justify-center p-4">
+        <div className="bg-white rounded-2xl p-8 text-center max-w-xs w-full shadow-2xl">
+          <p className="text-sm font-semibold text-charcoal mb-2">Payment Unsuccessful</p>
+          <p className="text-xs text-muted mb-6 leading-relaxed">{errorMsg}</p>
+          <button
+            onClick={() => { hasOpened.current = false; setStatus('idle'); onClose(); }}
+            className="bg-charcoal text-white text-sm font-semibold px-6 py-2.5 rounded-lg hover:bg-charcoal-light transition-colors w-full"
+          >
+            Go Back
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  return null;
 }

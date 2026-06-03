@@ -293,7 +293,7 @@ export default function ContactPage() {
                   type="text"
                   value={form.orderId}
                   onChange={e => handleChange('orderId', e.target.value)}
-                  placeholder="e.g. #VC-2026-8941"
+                  placeholder="e.g. #CH-2026-8941"
                   className="w-full px-4 py-2.5 border border-border rounded-xl text-sm outline-none focus:border-gold focus:ring-1 focus:ring-gold/20 transition-all bg-white placeholder:text-muted"
                 />
               </div>

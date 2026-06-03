@@ -31,7 +31,7 @@ export default function AboutPage() {
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl font-bold text-charcoal mb-6">Redefining Modern Fashion</h2>
           <p className="text-charcoal-muted leading-relaxed text-base">
-            Founded in Gurugram in 2022, Clothing Hub was born from a passion for bridging the gap between high fashion and everyday wearability. 
+            Founded in Gurugram in 2024, Clothing Hub was born from a passion for bridging the gap between high fashion and everyday wearability. 
             We believe that premium clothing should be accessible, sustainable, and designed to make you feel confident in every moment.
           </p>
           <p className="text-charcoal-muted leading-relaxed text-base mt-4">
@@ -65,7 +65,7 @@ export default function AboutPage() {
             </div>
             <div>
               <p className="font-medium text-charcoal">CIN / GSTIN</p>
-              <p>U74999MH2024PTC123456 / 06GFWPB8226N1ZP</p>
+              <p>U74999HR2024PTC123456 / 06GFWPB8226N1ZP</p>
             </div>
             <div>
               <p className="font-medium text-charcoal">Registered Address</p>
