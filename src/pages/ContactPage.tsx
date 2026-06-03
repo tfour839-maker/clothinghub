@@ -114,7 +114,7 @@ const credentials = [
       <address className="not-italic text-charcoal font-semibold text-sm leading-relaxed">
         Clothing Hub Pvt. Ltd.<br />
         102, Fashion Enclave, Sector 43<br />
-        Gurugram, Haryana — 122002, India<br />
+        Gurugram, Haryana — 122508, India<br />
         GSTIN: 06GFWPB8226N1ZP
       </address>
     ),

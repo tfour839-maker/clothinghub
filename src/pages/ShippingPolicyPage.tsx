@@ -132,7 +132,7 @@ export default function ShippingPolicyPage() {
             <ul className="mt-2 space-y-1">
               <li><strong>Email:</strong> Tfour839@gmail.com</li>
               <li><strong>Phone:</strong> +91 98135 62070</li>
-              <li><strong>Address:</strong> 102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122002, India</li>
+              <li><strong>Address:</strong> 102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122508, India</li>
             </ul>
           </section>
         </div>

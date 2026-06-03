@@ -39,7 +39,7 @@ export default function Footer() {
             <div className="space-y-2 text-sm text-white/50">
               <div className="flex items-start gap-2">
                 <MapPin size={14} className="mt-1 shrink-0" />
-                <span>Clothing Hub Pvt. Ltd., 102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122002, India</span>
+                <span>Clothing Hub Pvt. Ltd., 102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122508, India</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={14} className="shrink-0" />
@@ -103,7 +103,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={14} className="shrink-0 text-gold mt-1" />
-                <span>102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122002, India</span>
+                <span>102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122508, India</span>
               </li>
             </ul>
             <div className="mt-6">

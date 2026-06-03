@@ -69,7 +69,7 @@ export default function AboutPage() {
             </div>
             <div>
               <p className="font-medium text-charcoal">Registered Address</p>
-              <p>102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122002, India</p>
+              <p>102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122508, India</p>
             </div>
             <div>
               <p className="font-medium text-charcoal">Contact</p>
