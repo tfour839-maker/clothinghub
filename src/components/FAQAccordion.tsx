@@ -12,11 +12,11 @@ const faqs = [
   },
   {
     q: 'How do I initiate a return or exchange?',
-    a: 'You can initiate a return within 7 days of delivery by emailing support@clothinghub.com with your Order ID and reason for return, or by visiting our Returns Portal. Our team will respond within 24–48 hours with a return authorisation and free pickup instructions. Refunds are processed within 5–7 business days to the original payment method.',
+    a: 'You can initiate a return within 7 days of delivery by emailing support@clothinghub.com with your Order ID and reason for return. Our team will respond within 24–48 hours with a return authorisation and free pickup instructions. Refunds are processed within 5–7 business days to the original payment method.',
   },
   {
     q: 'What is the estimated delivery time?',
-    a: 'Orders are processed and dispatched within 24–48 hours of confirmation. Estimated delivery time across India is 3–5 business days for metro cities and 5–7 business days for Tier 2 / Tier 3 cities. Tracking updates will be shared via email and SMS at every stage of delivery.',
+    a: 'Orders are processed and dispatched within 24–48 hours of confirmation. Estimated delivery time across India is 3–5 business days for metro cities and 5–7 business days for Tier 2 / Tier 3 cities. Tracking updates will be shared via email at every stage of delivery.',
   },
   {
     q: 'Is my payment information secure?',

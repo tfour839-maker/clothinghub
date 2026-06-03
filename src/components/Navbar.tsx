@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Search, User, ShoppingBag, Menu, X } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
@@ -18,6 +18,14 @@ export default function Navbar() {
   const searchRef = useRef<HTMLInputElement>(null);
   const { totalItems, toggleCart } = useCart();
   const location = useLocation();
+  const navigate = useNavigate();
+
+  function handleSearch() {
+    if (!searchQuery.trim()) return;
+    navigate(`/shop?search=${encodeURIComponent(searchQuery.trim())}`);
+    setSearchQuery('');
+    setIsSearchOpen(false);
+  }
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -106,6 +114,7 @@ export default function Navbar() {
                         placeholder="Search for products..."
                         value={searchQuery}
                         onChange={e => setSearchQuery(e.target.value)}
+                        onKeyDown={e => e.key === 'Enter' && handleSearch()}
                         className="bg-transparent text-sm w-full outline-none placeholder:text-muted"
                         id="search-input"
                       />
@@ -116,13 +125,14 @@ export default function Navbar() {
             </div>
 
             {/* User Profile */}
-            <button
+            <Link
+              to="/login"
               id="user-profile"
               className="p-2 text-charcoal-muted hover:text-charcoal transition-colors hidden sm:block"
-              aria-label="User account"
+              aria-label="Sign in to your account"
             >
               <User size={20} />
-            </button>
+            </Link>
 
             {/* Cart */}
             <button

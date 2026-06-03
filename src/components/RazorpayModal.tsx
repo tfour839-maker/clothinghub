@@ -7,7 +7,7 @@ declare global {
 }
 
 // Replace with your live key before going live: rzp_live_XXXXXXXXXX
-const RAZORPAY_KEY = 'rzp_test_YOUR_KEY_HERE';
+const RAZORPAY_KEY = 'rzp_test_SxEG3o6HhozrFL';
 
 function loadRazorpayScript(): Promise<boolean> {
   return new Promise(resolve => {

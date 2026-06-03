@@ -166,14 +166,21 @@ export default function ContactPage() {
     if (nameErr || emailErr || messageErr) return;
 
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setForm({ name: '', email: '', orderId: '', message: '' });
-      setTouched({ name: false, email: false, message: false });
-      setErrors({ name: '', email: '', message: '' });
-      setShowToast(true);
-      setTimeout(() => setShowToast(false), 5500);
-    }, 700);
+
+    const subject = encodeURIComponent(
+      form.orderId ? `Support Request — Order ${form.orderId}` : `Support Request from ${form.name}`
+    );
+    const body = encodeURIComponent(
+      `Name: ${form.name}\nEmail: ${form.email}${form.orderId ? `\nOrder ID: ${form.orderId}` : ''}\n\nMessage:\n${form.message}`
+    );
+    window.location.href = `mailto:support@clothinghub.com?subject=${subject}&body=${body}`;
+
+    setIsSubmitting(false);
+    setForm({ name: '', email: '', orderId: '', message: '' });
+    setTouched({ name: false, email: false, message: false });
+    setErrors({ name: '', email: '', message: '' });
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 5500);
   };
 
   return (

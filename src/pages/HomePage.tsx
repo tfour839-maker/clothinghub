@@ -7,7 +7,7 @@ const trustSignals = [
   { icon: Truck, title: 'Free Shipping', desc: 'On orders over ₹999' },
   { icon: ShieldCheck, title: 'Secure Payments', desc: 'Powered by Razorpay' },
   { icon: RotateCcw, title: '7-Day Returns', desc: 'Easy return policy' },
-  { icon: Headphones, title: '24/7 Support', desc: 'Always here to help' },
+  { icon: Headphones, title: 'Dedicated Support', desc: 'Mon–Sat, 10 AM–7 PM IST' },
 ];
 
 export default function HomePage() {

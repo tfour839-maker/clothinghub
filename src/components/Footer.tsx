@@ -1,7 +1,18 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone } from 'lucide-react';
 
 export default function Footer() {
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+  const [newsletterDone, setNewsletterDone] = useState(false);
+
+  function handleSubscribe() {
+    if (!newsletterEmail.trim()) return;
+    window.location.href = `mailto:support@clothinghub.com?subject=Newsletter Subscription&body=Please add me to the Clothing Hub newsletter.%0A%0AEmail: ${encodeURIComponent(newsletterEmail)}`;
+    setNewsletterDone(true);
+    setNewsletterEmail('');
+  }
+
   return (
     <footer className="bg-charcoal text-white">
       {/* Newsletter */}
@@ -13,15 +24,27 @@ export default function Footer() {
               <p className="text-white/60 text-sm">Subscribe for exclusive offers, early access to new arrivals, and style inspiration delivered to your inbox.</p>
             </div>
             <div className="flex w-full lg:w-auto">
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="bg-white/10 border border-white/20 rounded-l-lg px-4 py-3 text-sm w-full lg:w-72 outline-none focus:border-gold transition-colors placeholder:text-white/40"
-                id="newsletter-email"
-              />
-              <button className="bg-gold hover:bg-gold-light text-charcoal font-semibold px-6 py-3 rounded-r-lg text-sm transition-colors whitespace-nowrap btn-premium">
-                Subscribe
-              </button>
+              {newsletterDone ? (
+                <p className="text-sm text-gold font-medium py-3">Thank you for subscribing!</p>
+              ) : (
+                <>
+                  <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    value={newsletterEmail}
+                    onChange={e => setNewsletterEmail(e.target.value)}
+                    onKeyDown={e => e.key === 'Enter' && handleSubscribe()}
+                    className="bg-white/10 border border-white/20 rounded-l-lg px-4 py-3 text-sm w-full lg:w-72 outline-none focus:border-gold transition-colors placeholder:text-white/40"
+                    id="newsletter-email"
+                  />
+                  <button
+                    onClick={handleSubscribe}
+                    className="bg-gold hover:bg-gold-light text-charcoal font-semibold px-6 py-3 rounded-r-lg text-sm transition-colors whitespace-nowrap btn-premium"
+                  >
+                    Subscribe
+                  </button>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -108,7 +131,7 @@ export default function Footer() {
             </ul>
             <div className="mt-6">
               <p className="text-xs text-white/40 mb-2">Customer support available</p>
-              <p className="text-sm text-white/70 font-medium">24/7 — All days including holidays</p>
+              <p className="text-sm text-white/70 font-medium">Mon–Sat, 10:00 AM – 7:00 PM IST</p>
             </div>
           </div>
         </div>

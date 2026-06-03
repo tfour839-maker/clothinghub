@@ -91,9 +91,9 @@ export default function ShippingPolicyPage() {
           <section>
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">5. Order Tracking</h2>
             <p>
-              Once your order has been dispatched, you will receive a confirmation email and SMS with a tracking number 
-              and a link to track your shipment in real-time. You can also track your order by logging into your account 
-              on our website.
+              Once your order has been dispatched, you will receive a confirmation email with a tracking number
+              and a link to track your shipment in real-time. You can also track your order by{' '}
+              <a href="/login" className="text-gold hover:underline">logging into your account</a> on our website.
             </p>
           </section>
 

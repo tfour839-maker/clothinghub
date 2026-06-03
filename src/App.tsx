@@ -14,6 +14,7 @@ import RefundPolicyPage from './pages/RefundPolicyPage';
 import ShippingPolicyPage from './pages/ShippingPolicyPage';
 import OrderSuccessPage from './pages/OrderSuccessPage';
 import FAQPage from './pages/FAQPage';
+import LoginPage from './pages/LoginPage';
 
 export default function App() {
   return (
@@ -41,6 +42,10 @@ export default function App() {
 
           {/* FAQ */}
           <Route path="/faqs" element={<FAQPage />} />
+
+          {/* Account */}
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<LoginPage />} />
 
           {/* Checkout */}
           <Route path="/order-success" element={<OrderSuccessPage />} />

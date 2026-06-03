@@ -16,7 +16,7 @@ export default function PrivacyPage() {
             <p>
               Clothing Hub Pvt. Ltd. ("Clothing Hub", "we", "our", "us") is committed to protecting the privacy and 
               security of your personal information. This Privacy Policy explains how we collect, use, share, and protect 
-              information obtained from users ("you", "your") of our website www.clothinghub.com (the "Site").
+              information obtained from users ("you", "your") of our website www.clooothinghub.store (the "Site").
             </p>
             <p className="mt-2">
               By using our Site, you consent to the data practices described in this Privacy Policy. We encourage you to 
@@ -28,7 +28,7 @@ export default function PrivacyPage() {
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">2. Information We Collect</h2>
             <p>We collect the following types of information:</p>
             <ul className="mt-2 space-y-2 list-disc pl-5">
-              <li><strong>Personal Information:</strong> Full name, email address, phone number, shipping and billing address, date of birth (optional), and gender (optional) — provided during account registration, order placement, or contact form submissions.</li>
+              <li><strong>Personal Information:</strong> Full name, email address, phone number, shipping and billing address, date of birth (optional), and gender (optional) — provided during order placement or contact form submissions.</li>
               <li><strong>Payment Information:</strong> Credit/debit card details, UPI IDs, and bank account information. This data is processed directly by our payment gateway partner, Razorpay, and is never stored on our servers.</li>
               <li><strong>Order Information:</strong> Purchase history, order details, delivery addresses, and communication related to your orders.</li>
               <li><strong>Technical Information:</strong> IP address, browser type, operating system, device information, pages visited, time spent on pages, and referring URLs — collected automatically through cookies and similar technologies.</li>
@@ -41,7 +41,7 @@ export default function PrivacyPage() {
             <p>We use the information collected for the following purposes:</p>
             <ul className="mt-2 space-y-1 list-disc pl-5">
               <li>To process and fulfil your orders, including shipping and delivery notifications.</li>
-              <li>To communicate with you regarding your orders, account, and customer support inquiries.</li>
+              <li>To communicate with you regarding your orders and customer support inquiries.</li>
               <li>To personalise your shopping experience and recommend products based on your preferences.</li>
               <li>To send promotional emails and newsletters (only with your explicit consent; you may opt out at any time).</li>
               <li>To improve our Site, products, and services through usage analytics.</li>
@@ -87,7 +87,7 @@ export default function PrivacyPage() {
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">7. Your Rights</h2>
             <p>You have the right to:</p>
             <ul className="mt-2 space-y-1 list-disc pl-5">
-              <li>Access, correct, or update your personal information at any time through your account settings.</li>
+              <li>Access, correct, or update your personal information by contacting our support team at support@clothinghub.com.</li>
               <li>Request deletion of your personal data by contacting our support team.</li>
               <li>Withdraw consent for marketing communications at any time.</li>
               <li>Lodge a complaint with the relevant data protection authority if you believe your privacy rights have been violated.</li>

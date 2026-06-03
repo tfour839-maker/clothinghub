@@ -15,7 +15,7 @@ export default function TermsPage() {
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">1. Introduction</h2>
             <p>
               Welcome to Clothing Hub ("Company", "we", "our", "us"). These Terms and Conditions ("Terms") govern your use of 
-              our website located at www.clothinghub.com (the "Site") and your purchase of products available on the Site. 
+              our website located at www.clooothinghub.store (the "Site") and your purchase of products available on the Site.
               By accessing or using our Site, you agree to be bound by these Terms. If you disagree with any part of these Terms, 
               please do not use our Site.
             </p>

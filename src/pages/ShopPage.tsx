@@ -144,6 +144,7 @@ export default function ShopPage() {
   const [searchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
 
+  const searchParam = searchParams.get('search') || '';
   const [selectedCategory, setSelectedCategory] = useState<string>(categoryParam || 'all');
   const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
   const [selectedColors, setSelectedColors] = useState<string[]>([]);
@@ -181,6 +182,13 @@ export default function ShopPage() {
   const filteredProducts = useMemo(() => {
     let result = [...products];
 
+    if (searchParam) {
+      const q = searchParam.toLowerCase();
+      result = result.filter(p =>
+        p.name.toLowerCase().includes(q) || p.description.toLowerCase().includes(q)
+      );
+    }
+
     if (selectedCategory !== 'all') {
       result = result.filter(p => p.category === selectedCategory);
     }
@@ -210,7 +218,7 @@ export default function ShopPage() {
     }
 
     return result;
-  }, [selectedCategory, selectedSizes, selectedColors, priceRange, sortBy]);
+  }, [selectedCategory, selectedSizes, selectedColors, priceRange, sortBy, searchParam]);
 
   const filterProps = {
     selectedCategory,
