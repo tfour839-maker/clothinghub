@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Globe, MessageCircle, Share2, Play, Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -39,11 +39,11 @@ export default function Footer() {
             <div className="space-y-2 text-sm text-white/50">
               <div className="flex items-start gap-2">
                 <MapPin size={14} className="mt-1 shrink-0" />
-                <span>Clothing Hub Pvt. Ltd., 102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122508, India</span>
+                <span>Clothing Hub Pvt. Ltd., 102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={14} className="shrink-0" />
-                <span>Tfour839@gmail.com</span>
+                <span>support@clothinghub.com</span>
               </div>
             </div>
           </div>
@@ -99,11 +99,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={14} className="shrink-0 text-gold" />
-                <span>Tfour839@gmail.com</span>
+                <span>support@clothinghub.com</span>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={14} className="shrink-0 text-gold mt-1" />
-                <span>102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122508, India</span>
+                <span>102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India</span>
               </li>
             </ul>
             <div className="mt-6">
@@ -119,27 +119,8 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-white/40 text-xs">
-              © {new Date().getFullYear()} Clothing Hub Pvt. Ltd. All rights reserved. CIN: U74999HR2024PTC123456 | GSTIN: 06GFWPB8226N1ZP
+              © {new Date().getFullYear()} Clothing Hub Pvt. Ltd. All rights reserved. GSTIN: 06GFWPB8226N1ZP
             </p>
-
-            {/* Social Media */}
-            <div className="flex items-center gap-4">
-              {[
-                { icon: Globe, label: 'Instagram' },
-                { icon: MessageCircle, label: 'Twitter' },
-                { icon: Share2, label: 'Facebook' },
-                { icon: Play, label: 'Youtube' },
-              ].map(({ icon: Icon, label }) => (
-                <a
-                  key={label}
-                  href="#"
-                  className="text-white/40 hover:text-gold transition-colors duration-200"
-                  aria-label={label}
-                >
-                  <Icon size={18} />
-                </a>
-              ))}
-            </div>
 
             {/* Payment Badges */}
             <div className="flex items-center gap-3">

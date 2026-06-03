@@ -115,9 +115,9 @@ export default function PrivacyPage() {
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">10. Contact Us</h2>
             <p>For any privacy-related inquiries or requests, please contact us at:</p>
             <ul className="mt-2 space-y-1">
-              <li><strong>Email:</strong> Tfour839@gmail.com</li>
+              <li><strong>Email:</strong> support@clothinghub.com</li>
               <li><strong>Phone:</strong> +91 98135 62070</li>
-              <li><strong>Address:</strong> 102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122508, India</li>
+              <li><strong>Address:</strong> 102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India</li>
             </ul>
           </section>
         </div>

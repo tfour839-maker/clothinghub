@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: 'How do I initiate a return or exchange?',
-    a: 'You can initiate a return within 7 days of delivery by emailing Tfour839@gmail.com with your Order ID and reason for return, or by visiting our Returns Portal. Our team will respond within 24–48 hours with a return authorisation and free pickup instructions. Refunds are processed within 5–7 business days to the original payment method.',
+    a: 'You can initiate a return within 7 days of delivery by emailing support@clothinghub.com with your Order ID and reason for return, or by visiting our Returns Portal. Our team will respond within 24–48 hours with a return authorisation and free pickup instructions. Refunds are processed within 5–7 business days to the original payment method.',
   },
   {
     q: 'What is the estimated delivery time?',
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: 'Can I modify or cancel my order after it is placed?',
-    a: 'Order modifications or cancellations are possible only before the order is dispatched from our warehouse, typically within 12 hours of placement. Please contact our support team immediately at Tfour839@gmail.com or call +91 98135 62070 to request a change. Once dispatched, please follow our standard return process.',
+    a: 'Order modifications or cancellations are possible only before the order is dispatched from our warehouse, typically within 12 hours of placement. Please contact our support team immediately at support@clothinghub.com or call +91 98135 62070 to request a change. Once dispatched, please follow our standard return process.',
   },
 ];
 

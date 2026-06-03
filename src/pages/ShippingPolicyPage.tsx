@@ -113,7 +113,7 @@ export default function ShippingPolicyPage() {
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">7. Shipping Damage</h2>
             <p>
               If your package arrives damaged, please do not accept the delivery. If the damage is noticed after accepting, 
-              please contact us within <strong>48 hours</strong> at <strong>Tfour839@gmail.com</strong> with photographs 
+              please contact us within <strong>48 hours</strong> at <strong>support@clothinghub.com</strong> with photographs 
               of the damaged packaging and product. We will arrange a replacement or refund free of charge.
             </p>
           </section>
@@ -130,9 +130,9 @@ export default function ShippingPolicyPage() {
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">9. Contact Us</h2>
             <p>For any shipping or delivery-related queries:</p>
             <ul className="mt-2 space-y-1">
-              <li><strong>Email:</strong> Tfour839@gmail.com</li>
+              <li><strong>Email:</strong> support@clothinghub.com</li>
               <li><strong>Phone:</strong> +91 98135 62070</li>
-              <li><strong>Address:</strong> 102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122508, India</li>
+              <li><strong>Address:</strong> 102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India</li>
             </ul>
           </section>
         </div>

@@ -64,16 +64,16 @@ export default function AboutPage() {
               <p>Clothing Hub Pvt. Ltd.</p>
             </div>
             <div>
-              <p className="font-medium text-charcoal">CIN / GSTIN</p>
-              <p>U74999HR2024PTC123456 / 06GFWPB8226N1ZP</p>
+              <p className="font-medium text-charcoal">GSTIN</p>
+              <p>06GFWPB8226N1ZP</p>
             </div>
             <div>
               <p className="font-medium text-charcoal">Registered Address</p>
-              <p>102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122508, India</p>
+              <p>102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India</p>
             </div>
             <div>
               <p className="font-medium text-charcoal">Contact</p>
-              <p>Email: Tfour839@gmail.com</p>
+              <p>Email: support@clothinghub.com</p>
               <p>Phone: +91 98135 62070</p>
             </div>
           </div>

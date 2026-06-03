@@ -47,7 +47,7 @@ export default function RefundPolicyPage() {
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">4. How to Initiate a Return</h2>
             <p>To initiate a return, please follow these steps:</p>
             <ol className="mt-2 space-y-2 list-decimal pl-5">
-              <li>Email our support team at <strong>Tfour839@gmail.com</strong> with your order number, the item(s) you wish to return, and the reason for the return.</li>
+              <li>Email our support team at <strong>support@clothinghub.com</strong> with your order number, the item(s) you wish to return, and the reason for the return.</li>
               <li>Our team will review your request and respond within 24–48 hours with a return authorisation and instructions.</li>
               <li>Pack the item(s) securely in the original packaging and ship them to the return address provided.</li>
               <li>Once we receive and inspect the returned item(s), we will process your refund or exchange.</li>
@@ -72,7 +72,7 @@ export default function RefundPolicyPage() {
               You may cancel your order free of charge, provided it has <strong>not yet been shipped</strong>. To cancel an order:
             </p>
             <ul className="mt-2 space-y-1 list-disc pl-5">
-              <li>Contact us at <strong>Tfour839@gmail.com</strong> or call <strong>+91 98135 62070</strong> as soon as possible after placing the order.</li>
+              <li>Contact us at <strong>support@clothinghub.com</strong> or call <strong>+91 98135 62070</strong> as soon as possible after placing the order.</li>
               <li>If the order has already been dispatched, you will need to wait for delivery and then initiate a return as per our return policy.</li>
               <li>Cancellation refunds are processed within <strong>3–5 business days</strong> to the original payment method.</li>
             </ul>
@@ -100,9 +100,9 @@ export default function RefundPolicyPage() {
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">9. Contact Us</h2>
             <p>For any return, refund, or cancellation inquiries:</p>
             <ul className="mt-2 space-y-1">
-              <li><strong>Email:</strong> Tfour839@gmail.com</li>
+              <li><strong>Email:</strong> support@clothinghub.com</li>
               <li><strong>Phone:</strong> +91 98135 62070</li>
-              <li><strong>Address:</strong> 102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122508, India</li>
+              <li><strong>Address:</strong> 102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India</li>
             </ul>
           </section>
         </div>

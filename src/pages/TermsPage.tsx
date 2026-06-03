@@ -20,9 +20,9 @@ export default function TermsPage() {
               please do not use our Site.
             </p>
             <p className="mt-2">
-              These Terms apply to all visitors, users, and others who access or use the Site. Clothing Hub is operated by 
-              Clothing Hub Pvt. Ltd., a company registered under the Companies Act, 2013, with CIN: U74999HR2024PTC123456 and GSTIN: 06GFWPB8226N1ZP, 
-              having its registered office at 102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122508, India.
+              These Terms apply to all visitors, users, and others who access or use the Site. Clothing Hub is operated by
+              Clothing Hub Pvt. Ltd., a company registered under the Companies Act, 2013, with GSTIN: 06GFWPB8226N1ZP,
+              having its registered office at 102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India.
             </p>
           </section>
 
@@ -122,9 +122,9 @@ export default function TermsPage() {
               If you have any questions or concerns regarding these Terms and Conditions, please contact us at:
             </p>
             <ul className="mt-2 space-y-1">
-              <li><strong>Email:</strong> Tfour839@gmail.com</li>
+              <li><strong>Email:</strong> support@clothinghub.com</li>
               <li><strong>Phone:</strong> +91 98135 62070</li>
-              <li><strong>Address:</strong> 102, Fashion Enclave, Sector 43, Gurugram, Haryana — 122508, India</li>
+              <li><strong>Address:</strong> 102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India</li>
             </ul>
           </section>
         </div>

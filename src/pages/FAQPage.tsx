@@ -50,11 +50,11 @@ export default function FAQPage() {
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <a
-                  href="mailto:Tfour839@gmail.com"
+                  href="mailto:support@clothinghub.com"
                   className="border border-border text-charcoal font-semibold px-8 py-3.5 rounded-xl hover:bg-white hover:border-gold/40 transition-all flex items-center justify-center gap-2"
                 >
                   <Mail size={16} className="text-gold" />
-                  Tfour839@gmail.com
+                  support@clothinghub.com
                 </a>
               </div>
 

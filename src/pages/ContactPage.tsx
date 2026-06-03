@@ -84,10 +84,10 @@ const credentials = [
     label: 'Customer Support Email',
     content: (
       <a
-        href="mailto:Tfour839@gmail.com"
+        href="mailto:support@clothinghub.com"
         className="text-charcoal font-semibold text-sm hover:text-gold transition-colors flex items-center gap-1.5 group"
       >
-        Tfour839@gmail.com
+        support@clothinghub.com
         <ExternalLink size={12} className="text-muted group-hover:text-gold transition-colors" />
       </a>
     ),
@@ -113,12 +113,12 @@ const credentials = [
     content: (
       <address className="not-italic text-charcoal font-semibold text-sm leading-relaxed">
         Clothing Hub Pvt. Ltd.<br />
-        102, Fashion Enclave, Sector 43<br />
+        102, Fashion Enclave, Manesar<br />
         Gurugram, Haryana — 122508, India<br />
         GSTIN: 06GFWPB8226N1ZP
       </address>
     ),
-    sub: 'CIN: U74999HR2024PTC123456',
+    sub: '',
   },
   {
     icon: Clock,
