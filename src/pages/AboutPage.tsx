@@ -15,14 +15,14 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&h=800&fit=crop"
-            alt="About Clothing Hub — Our story and values"
+            alt="About CLOTHS HUB — Our story and values"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-charcoal/60" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
           <span className="text-gold text-xs font-semibold uppercase tracking-[3px]">Our Story</span>
-          <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mt-3">About Clothing Hub</h1>
+          <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mt-3">About CLOTHS HUB</h1>
         </div>
       </section>
 
@@ -31,12 +31,12 @@ export default function AboutPage() {
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl font-bold text-charcoal mb-6">Redefining Modern Fashion</h2>
           <p className="text-charcoal-muted leading-relaxed text-base">
-            Founded in Gurugram in 2024, Clothing Hub was born from a passion for bridging the gap between high fashion and everyday wearability. 
+            Founded in Gurugram in 2024, CLOTHS HUB was born from a passion for bridging the gap between high fashion and everyday wearability. 
             We believe that premium clothing should be accessible, sustainable, and designed to make you feel confident in every moment.
           </p>
           <p className="text-charcoal-muted leading-relaxed text-base mt-4">
             Our team of designers and sourcing experts work closely with skilled artisans across India to create collections that honour traditional craftsmanship 
-            while embracing contemporary aesthetics. From the organic cotton fields of Gujarat to the silk looms of Varanasi, every Clothing Hub piece carries a story of dedication and artistry.
+            while embracing contemporary aesthetics. From the organic cotton fields of Gujarat to the silk looms of Varanasi, every CLOTHS HUB piece carries a story of dedication and artistry.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-charcoal-muted">
             <div>
               <p className="font-medium text-charcoal">Registered Name</p>
-              <p>Clothing Hub Pvt. Ltd.</p>
+              <p>CLOTHS HUB Pvt. Ltd.</p>
             </div>
             <div>
               <p className="font-medium text-charcoal">GSTIN</p>
@@ -69,11 +69,11 @@ export default function AboutPage() {
             </div>
             <div>
               <p className="font-medium text-charcoal">Registered Address</p>
-              <p>102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India</p>
+              <p>238, Hodal Punhana Road, Punahana, Nuh, Haryana — 122508, India</p>
             </div>
             <div>
               <p className="font-medium text-charcoal">Contact</p>
-              <p>Email: support@clothinghub.com</p>
+              <p>Email: support@clothshub.online</p>
               <p>Phone: +91 98135 62070</p>
             </div>
           </div>

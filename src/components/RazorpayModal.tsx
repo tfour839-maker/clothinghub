@@ -60,7 +60,7 @@ export default function RazorpayModal({ isOpen, onClose }: RazorpayModalProps) {
         key: RAZORPAY_KEY,
         amount: total * 100,
         currency: 'INR',
-        name: 'Clothing Hub',
+        name: 'CLOTHS HUB',
         description: `Order ${orderId}`,
         handler: (response: { razorpay_payment_id: string }) => {
           clearCart();

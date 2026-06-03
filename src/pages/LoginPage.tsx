@@ -80,7 +80,7 @@ export default function LoginPage() {
           </h2>
           <p className="text-sm text-muted mb-6 leading-relaxed">
             {tab === 'login'
-              ? 'You have successfully signed in to your Clothing Hub account.'
+              ? 'You have successfully signed in to your CLOTHS HUB account.'
               : 'Your account has been created. You can now track orders and manage your profile.'}
           </p>
           <Link
@@ -101,7 +101,7 @@ export default function LoginPage() {
         {/* Header */}
         <div className="text-center mb-8">
           <Link to="/" className="font-display text-2xl font-semibold text-charcoal hover:text-gold transition-colors">
-            Clothing Hub
+            CLOTHS HUB
           </Link>
           <p className="text-sm text-muted mt-2">
             {tab === 'login' ? 'Sign in to track orders and manage your profile' : 'Create an account to get started'}

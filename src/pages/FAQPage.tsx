@@ -14,7 +14,7 @@ export default function FAQPage() {
             Frequently Asked Questions
           </h1>
           <p className="text-muted mt-2 max-w-xl leading-relaxed">
-            Everything you need to know about orders, payments, shipping, and returns at Clothing Hub
+            Everything you need to know about orders, payments, shipping, and returns at CLOTHS HUB
             Can't find your answer? Our team is one message away.
           </p>
         </div>
@@ -50,11 +50,11 @@ export default function FAQPage() {
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <a
-                  href="mailto:support@clothinghub.com"
+                  href="mailto:support@clothshub.online"
                   className="border border-border text-charcoal font-semibold px-8 py-3.5 rounded-xl hover:bg-white hover:border-gold/40 transition-all flex items-center justify-center gap-2"
                 >
                   <Mail size={16} className="text-gold" />
-                  support@clothinghub.com
+                  support@clothshub.online
                 </a>
               </div>
 

@@ -14,7 +14,7 @@ export default function ShippingPolicyPage() {
           <section>
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">1. Shipping Coverage</h2>
             <p>
-              Clothing Hub currently ships to all serviceable pin codes across India. We partner with leading logistics 
+              CLOTHS HUB currently ships to all serviceable pin codes across India. We partner with leading logistics 
               providers to ensure safe and timely delivery of your orders. We do not offer international shipping at this time.
             </p>
           </section>
@@ -113,7 +113,7 @@ export default function ShippingPolicyPage() {
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">7. Shipping Damage</h2>
             <p>
               If your package arrives damaged, please do not accept the delivery. If the damage is noticed after accepting, 
-              please contact us within <strong>48 hours</strong> at <strong>support@clothinghub.com</strong> with photographs 
+              please contact us within <strong>48 hours</strong> at <strong>support@clothshub.online</strong> with photographs 
               of the damaged packaging and product. We will arrange a replacement or refund free of charge.
             </p>
           </section>
@@ -130,9 +130,9 @@ export default function ShippingPolicyPage() {
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">9. Contact Us</h2>
             <p>For any shipping or delivery-related queries:</p>
             <ul className="mt-2 space-y-1">
-              <li><strong>Email:</strong> support@clothinghub.com</li>
+              <li><strong>Email:</strong> support@clothshub.online</li>
               <li><strong>Phone:</strong> +91 98135 62070</li>
-              <li><strong>Address:</strong> 102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India</li>
+              <li><strong>Address:</strong> 238, Hodal Punhana Road, Punahana, Nuh, Haryana — 122508, India</li>
             </ul>
           </section>
         </div>

@@ -84,10 +84,10 @@ const credentials = [
     label: 'Customer Support Email',
     content: (
       <a
-        href="mailto:support@clothinghub.com"
+        href="mailto:support@clothshub.online"
         className="text-charcoal font-semibold text-sm hover:text-gold transition-colors flex items-center gap-1.5 group"
       >
-        support@clothinghub.com
+        support@clothshub.online
         <ExternalLink size={12} className="text-muted group-hover:text-gold transition-colors" />
       </a>
     ),
@@ -112,9 +112,9 @@ const credentials = [
     label: 'Physical Operating Address',
     content: (
       <address className="not-italic text-charcoal font-semibold text-sm leading-relaxed">
-        Clothing Hub Pvt. Ltd.<br />
-        102, Fashion Enclave, Manesar<br />
-        Gurugram, Haryana — 122508, India<br />
+        CLOTHS HUB Pvt. Ltd.<br />
+        238, Hodal Punhana Road<br />
+        Punahana, Nuh, Haryana — 122508, India<br />
         GSTIN: 06GFWPB8226N1ZP
       </address>
     ),
@@ -173,7 +173,7 @@ export default function ContactPage() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nEmail: ${form.email}${form.orderId ? `\nOrder ID: ${form.orderId}` : ''}\n\nMessage:\n${form.message}`
     );
-    window.location.href = `mailto:support@clothinghub.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:support@clothshub.online?subject=${subject}&body=${body}`;
 
     setIsSubmitting(false);
     setForm({ name: '', email: '', orderId: '', message: '' });
@@ -208,7 +208,7 @@ export default function ContactPage() {
               Official Support &amp; Corporate Office
             </h2>
             <p className="text-sm text-muted mb-8 leading-relaxed">
-              All support is handled directly by Clothing Hub Pvt. Ltd. We are a registered Indian business
+              All support is handled directly by CLOTHS HUB Pvt. Ltd. We are a registered Indian business
               committed to transparent customer service.
             </p>
 

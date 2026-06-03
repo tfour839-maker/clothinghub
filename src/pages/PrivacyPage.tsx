@@ -14,9 +14,9 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">1. Introduction</h2>
             <p>
-              Clothing Hub Pvt. Ltd. ("Clothing Hub", "we", "our", "us") is committed to protecting the privacy and 
+              CLOTHS HUB Pvt. Ltd. ("CLOTHS HUB", "we", "our", "us") is committed to protecting the privacy and 
               security of your personal information. This Privacy Policy explains how we collect, use, share, and protect 
-              information obtained from users ("you", "your") of our website www.clooothinghub.store (the "Site").
+              information obtained from users ("you", "your") of our website www.clothshub.online (the "Site").
             </p>
             <p className="mt-2">
               By using our Site, you consent to the data practices described in this Privacy Policy. We encourage you to 
@@ -87,7 +87,7 @@ export default function PrivacyPage() {
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">7. Your Rights</h2>
             <p>You have the right to:</p>
             <ul className="mt-2 space-y-1 list-disc pl-5">
-              <li>Access, correct, or update your personal information by contacting our support team at support@clothinghub.com.</li>
+              <li>Access, correct, or update your personal information by contacting our support team at support@clothshub.online.</li>
               <li>Request deletion of your personal data by contacting our support team.</li>
               <li>Withdraw consent for marketing communications at any time.</li>
               <li>Lodge a complaint with the relevant data protection authority if you believe your privacy rights have been violated.</li>
@@ -115,9 +115,9 @@ export default function PrivacyPage() {
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">10. Contact Us</h2>
             <p>For any privacy-related inquiries or requests, please contact us at:</p>
             <ul className="mt-2 space-y-1">
-              <li><strong>Email:</strong> support@clothinghub.com</li>
+              <li><strong>Email:</strong> support@clothshub.online</li>
               <li><strong>Phone:</strong> +91 98135 62070</li>
-              <li><strong>Address:</strong> 102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India</li>
+              <li><strong>Address:</strong> 238, Hodal Punhana Road, Punahana, Nuh, Haryana — 122508, India</li>
             </ul>
           </section>
         </div>

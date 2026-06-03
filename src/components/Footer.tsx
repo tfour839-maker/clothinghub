@@ -8,7 +8,7 @@ export default function Footer() {
 
   function handleSubscribe() {
     if (!newsletterEmail.trim()) return;
-    window.location.href = `mailto:support@clothinghub.com?subject=Newsletter Subscription&body=Please add me to the Clothing Hub newsletter.%0A%0AEmail: ${encodeURIComponent(newsletterEmail)}`;
+    window.location.href = `mailto:support@clothshub.online?subject=Newsletter Subscription&body=Please add me to the CLOTHS HUB newsletter.%0A%0AEmail: ${encodeURIComponent(newsletterEmail)}`;
     setNewsletterDone(true);
     setNewsletterEmail('');
   }
@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div>
-              <h3 className="font-display text-2xl font-semibold mb-2">Join the Clothing Hub Community</h3>
+              <h3 className="font-display text-2xl font-semibold mb-2">Join the CLOTHS HUB Community</h3>
               <p className="text-white/60 text-sm">Subscribe for exclusive offers, early access to new arrivals, and style inspiration delivered to your inbox.</p>
             </div>
             <div className="flex w-full lg:w-auto">
@@ -55,18 +55,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Column 1: About */}
           <div>
-            <h4 className="font-display text-xl font-semibold mb-4">Clothing Hub</h4>
+            <h4 className="font-display text-xl font-semibold mb-4">CLOTHS HUB</h4>
             <p className="text-white/60 text-sm leading-relaxed mb-4">
-              Clothing Hub is a premium fashion brand dedicated to curating modern essentials for the contemporary individual. We believe in quality craftsmanship, sustainable practices, and timeless style.
+              CLOTHS HUB is a premium fashion brand dedicated to curating modern essentials for the contemporary individual. We believe in quality craftsmanship, sustainable practices, and timeless style.
             </p>
             <div className="space-y-2 text-sm text-white/50">
               <div className="flex items-start gap-2">
                 <MapPin size={14} className="mt-1 shrink-0" />
-                <span>Clothing Hub Pvt. Ltd., 102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India</span>
+                <span>CLOTHS HUB Pvt. Ltd., 238, Hodal Punhana Road, Punahana, Nuh, Haryana — 122508, India</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={14} className="shrink-0" />
-                <span>support@clothinghub.com</span>
+                <span>support@clothshub.online</span>
               </div>
             </div>
           </div>
@@ -122,11 +122,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={14} className="shrink-0 text-gold" />
-                <span>support@clothinghub.com</span>
+                <span>support@clothshub.online</span>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={14} className="shrink-0 text-gold mt-1" />
-                <span>102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India</span>
+                <span>238, Hodal Punhana Road, Punahana, Nuh, Haryana — 122508, India</span>
               </li>
             </ul>
             <div className="mt-6">
@@ -142,7 +142,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-white/40 text-xs">
-              © {new Date().getFullYear()} Clothing Hub Pvt. Ltd. All rights reserved. GSTIN: 06GFWPB8226N1ZP
+              © {new Date().getFullYear()} CLOTHS HUB Pvt. Ltd. All rights reserved. GSTIN: 06GFWPB8226N1ZP
             </p>
 
             {/* Payment Badges */}

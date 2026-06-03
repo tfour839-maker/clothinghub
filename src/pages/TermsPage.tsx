@@ -14,15 +14,15 @@ export default function TermsPage() {
           <section>
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">1. Introduction</h2>
             <p>
-              Welcome to Clothing Hub ("Company", "we", "our", "us"). These Terms and Conditions ("Terms") govern your use of 
-              our website located at www.clooothinghub.store (the "Site") and your purchase of products available on the Site.
+              Welcome to CLOTHS HUB ("Company", "we", "our", "us"). These Terms and Conditions ("Terms") govern your use of 
+              our website located at www.clothshub.online (the "Site") and your purchase of products available on the Site.
               By accessing or using our Site, you agree to be bound by these Terms. If you disagree with any part of these Terms, 
               please do not use our Site.
             </p>
             <p className="mt-2">
-              These Terms apply to all visitors, users, and others who access or use the Site. Clothing Hub is operated by
-              Clothing Hub Pvt. Ltd., a company registered under the Companies Act, 2013, with GSTIN: 06GFWPB8226N1ZP,
-              having its registered office at 102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India.
+              These Terms apply to all visitors, users, and others who access or use the Site. CLOTHS HUB is operated by
+              CLOTHS HUB Pvt. Ltd., a company registered under the Companies Act, 2013, with GSTIN: 06GFWPB8226N1ZP,
+              having its registered office at 238, Hodal Punhana Road, Punahana, Nuh, Haryana — 122508, India.
             </p>
           </section>
 
@@ -83,7 +83,7 @@ export default function TermsPage() {
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">7. Intellectual Property</h2>
             <p>
               All content on this Site, including but not limited to text, graphics, logos, images, product designs, and 
-              software, is the property of Clothing Hub Pvt. Ltd. and is protected by Indian and international 
+              software, is the property of CLOTHS HUB Pvt. Ltd. and is protected by Indian and international 
               copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, or 
               create derivative works from any content without our prior written consent.
             </p>
@@ -101,7 +101,7 @@ export default function TermsPage() {
           <section>
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">9. Limitation of Liability</h2>
             <p>
-              To the fullest extent permitted by applicable law, Clothing Hub Pvt. Ltd. shall not be liable for any 
+              To the fullest extent permitted by applicable law, CLOTHS HUB Pvt. Ltd. shall not be liable for any 
               indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of 
               the Site or the purchase of products. Our total liability for any claim arising under these Terms shall not 
               exceed the total amount paid by you for the specific product giving rise to the claim.
@@ -122,9 +122,9 @@ export default function TermsPage() {
               If you have any questions or concerns regarding these Terms and Conditions, please contact us at:
             </p>
             <ul className="mt-2 space-y-1">
-              <li><strong>Email:</strong> support@clothinghub.com</li>
+              <li><strong>Email:</strong> support@clothshub.online</li>
               <li><strong>Phone:</strong> +91 98135 62070</li>
-              <li><strong>Address:</strong> 102, Fashion Enclave, Manesar, Gurugram, Haryana — 122508, India</li>
+              <li><strong>Address:</strong> 238, Hodal Punhana Road, Punahana, Nuh, Haryana — 122508, India</li>
             </ul>
           </section>
         </div>
