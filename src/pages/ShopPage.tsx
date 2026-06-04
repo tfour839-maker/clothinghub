@@ -38,7 +38,7 @@ function FilterSidebar({
       <div>
         <h3 className="text-sm font-semibold uppercase tracking-wider text-charcoal mb-3">Category</h3>
         <div className="space-y-2">
-          {['all', 'men', 'women', 'accessories'].map(cat => (
+          {['all', 'men', 'accessories'].map(cat => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}

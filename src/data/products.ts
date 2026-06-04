@@ -1,7 +1,7 @@
 export interface Product {
   id: number;
   name: string;
-  category: 'men' | 'women' | 'accessories';
+  category: 'men' | 'accessories';
   price: number;
   originalPrice: number;
   discount: number;
@@ -74,65 +74,7 @@ export const products: Product[] = [
     description: "A wardrobe essential. This classic denim jacket features a timeless wash and rugged construction that only gets better with age.",
     tag: "Trending"
   },
-  {
-    id: 5,
-    name: "Floral Wrap Midi Dress",
-    category: "women",
-    price: 2799,
-    originalPrice: 3999,
-    discount: 30,
-    rating: 4.8,
-    reviews: 156,
-    image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=600&h=750&fit=crop",
-    sizes: ["S", "M", "L"],
-    colors: ["Floral Blue", "Rose Pink"],
-    description: "An elegant wrap dress in a delicate floral print. Features a flattering V-neckline and adjustable tie waist for a customized fit.",
-    tag: "Bestseller"
-  },
-  {
-    id: 6,
-    name: "High-Waist Wide Leg Trousers",
-    category: "women",
-    price: 2299,
-    originalPrice: 3299,
-    discount: 30,
-    rating: 4.4,
-    reviews: 92,
-    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&h=750&fit=crop",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["Black", "Cream", "Burgundy"],
-    description: "Sophisticated wide-leg trousers with a high waist that elongates the silhouette. Made from fluid crepe fabric for elegant drape."
-  },
-  {
-    id: 7,
-    name: "Cashmere Blend Knit Sweater",
-    category: "women",
-    price: 3999,
-    originalPrice: 5999,
-    discount: 33,
-    rating: 4.9,
-    reviews: 78,
-    image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&h=750&fit=crop",
-    sizes: ["S", "M", "L"],
-    colors: ["Camel", "Ivory", "Charcoal"],
-    description: "Luxuriously soft cashmere-blend sweater with a relaxed crew neck. Perfect for layering during cooler months.",
-    tag: "Premium"
-  },
-  {
-    id: 8,
-    name: "Structured Blazer in Neutral",
-    category: "women",
-    price: 4299,
-    originalPrice: 5999,
-    discount: 28,
-    rating: 4.6,
-    reviews: 112,
-    image: "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=600&h=750&fit=crop",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["Sand", "Black", "Grey"],
-    description: "A beautifully structured blazer that transitions effortlessly from office to evening. Features padded shoulders and a single-button closure.",
-    tag: "New"
-  },
+
   {
     id: 9,
     name: "Leather Crossbody Sling Bag",
@@ -205,20 +147,7 @@ export const products: Product[] = [
     colors: ["Black", "Grey Melange", "Forest Green"],
     description: "Ultra-soft cotton-fleece hoodie with a relaxed fit. Features a kangaroo pocket, adjustable drawstring hood, and ribbed cuffs."
   },
-  {
-    id: 14,
-    name: "Satin Camisole Top",
-    category: "women",
-    price: 1599,
-    originalPrice: 2299,
-    discount: 30,
-    rating: 4.5,
-    reviews: 83,
-    image: "https://images.unsplash.com/photo-1485462537746-965f33f7f6a7?w=600&h=750&fit=crop",
-    sizes: ["S", "M", "L"],
-    colors: ["Champagne", "Black", "Dusty Rose"],
-    description: "A luxurious satin camisole with delicate lace trim. Perfect for layering under blazers or wearing on its own for evening occasions."
-  },
+
   {
     id: 15,
     name: "Merino Wool Crew Socks",
@@ -233,21 +162,7 @@ export const products: Product[] = [
     colors: ["Charcoal", "Navy", "Oatmeal"],
     description: "Premium merino wool crew socks that are naturally temperature-regulating, moisture-wicking, and odor-resistant. Ideal for all seasons."
   },
-  {
-    id: 16,
-    name: "Structured Wool Coat",
-    category: "women",
-    price: 6999,
-    originalPrice: 9999,
-    discount: 30,
-    rating: 4.8,
-    reviews: 45,
-    image: "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?w=600&h=750&fit=crop",
-    sizes: ["S", "M", "L"],
-    colors: ["Camel", "Black", "Grey"],
-    description: "A statement wool coat with clean lines and a structured silhouette. Features a single-breasted button closure, deep pockets, and a notch lapel.",
-    tag: "Premium"
-  },
+
 ];
 
 export const categories = [
@@ -256,12 +171,6 @@ export const categories = [
     slug: "men",
     image: "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&h=750&fit=crop",
     description: "Refined essentials for the modern man"
-  },
-  {
-    name: "Women",
-    slug: "women",
-    image: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=600&h=750&fit=crop",
-    description: "Elegant pieces for every occasion"
   },
   {
     name: "Accessories",

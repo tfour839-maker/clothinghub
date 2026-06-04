@@ -79,7 +79,6 @@ export default function Footer() {
                 { name: 'Home', path: '/' },
                 { name: 'Shop All', path: '/shop' },
                 { name: 'Men', path: '/shop?category=men' },
-                { name: 'Women', path: '/shop?category=women' },
                 { name: 'Accessories', path: '/shop?category=accessories' },
                 { name: 'About Us', path: '/about' },
                 { name: 'Contact Us', path: '/contact' },
