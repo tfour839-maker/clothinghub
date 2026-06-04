@@ -64,6 +64,10 @@ export default function AboutPage() {
               <p>CLOTHES HUB Pvt. Ltd.</p>
             </div>
             <div>
+              <p className="font-medium text-charcoal">Proprietor / Owner</p>
+              <p>BAHID</p>
+            </div>
+            <div>
               <p className="font-medium text-charcoal">GSTIN</p>
               <p>06GFWPB8226N1ZP</p>
             </div>

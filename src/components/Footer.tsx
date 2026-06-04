@@ -62,7 +62,7 @@ export default function Footer() {
             <div className="space-y-2 text-sm text-white/50">
               <div className="flex items-start gap-2">
                 <MapPin size={14} className="mt-1 shrink-0" />
-                <span>CLOTHES HUB Pvt. Ltd., 238, Hodal Punhana Road, Punahana, Nuh, Haryana — 122508, India</span>
+                <span>CLOTHES HUB Pvt. Ltd. (Owner: BAHID), 238, Hodal Punhana Road, Punahana, Nuh, Haryana — 122508, India</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={14} className="shrink-0" />

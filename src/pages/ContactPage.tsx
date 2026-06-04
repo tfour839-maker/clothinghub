@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {
-  Mail, Phone, MapPin, Clock,
+  Mail, Phone, MapPin, Clock, User,
   CheckCircle, X, AlertCircle, ArrowRight,
   ExternalLink,
 } from 'lucide-react';
@@ -106,6 +106,16 @@ const credentials = [
       </a>
     ),
     sub: 'Monday – Saturday, 10:00 AM – 7:00 PM IST',
+  },
+  {
+    icon: User,
+    label: 'Proprietor / Owner',
+    content: (
+      <p className="text-charcoal font-semibold text-sm leading-relaxed">
+        BAHID
+      </p>
+    ),
+    sub: 'Business Owner & Founder',
   },
   {
     icon: MapPin,

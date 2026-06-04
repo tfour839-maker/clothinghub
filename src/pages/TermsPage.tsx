@@ -21,7 +21,7 @@ export default function TermsPage() {
             </p>
             <p className="mt-2">
               These Terms apply to all visitors, users, and others who access or use the Site. CLOTHES HUB is operated by
-              CLOTHES HUB Pvt. Ltd., a company registered under the Companies Act, 2013, with GSTIN: 06GFWPB8226N1ZP,
+              CLOTHES HUB Pvt. Ltd. (Proprietor: BAHID), a company registered under the Companies Act, 2013, with GSTIN: 06GFWPB8226N1ZP,
               having its registered office at 238, Hodal Punhana Road, Punahana, Nuh, Haryana — 122508, India.
             </p>
           </section>
