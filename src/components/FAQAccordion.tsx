@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'Is my payment information secure?',
-    a: 'Absolutely. All payments are processed exclusively by Razorpay, which holds PCI DSS Level 1 compliance — the highest certification standard in the payments industry. CLOTHS HUB does not store, access, or log any card or banking credentials. All transactions are protected by 256-bit SSL encryption.',
+    a: 'Absolutely. All payments are processed exclusively by Razorpay, which holds PCI DSS Level 1 compliance — the highest certification standard in the payments industry. CLOTHES HUB does not store, access, or log any card or banking credentials. All transactions are protected by 256-bit SSL encryption.',
   },
   {
     q: 'Can I modify or cancel my order after it is placed?',

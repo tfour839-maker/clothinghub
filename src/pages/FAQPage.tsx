@@ -14,7 +14,7 @@ export default function FAQPage() {
             Frequently Asked Questions
           </h1>
           <p className="text-muted mt-2 max-w-xl leading-relaxed">
-            Everything you need to know about orders, payments, shipping, and returns at CLOTHS HUB
+            Everything you need to know about orders, payments, shipping, and returns at CLOTHES HUB
             Can't find your answer? Our team is one message away.
           </p>
         </div>

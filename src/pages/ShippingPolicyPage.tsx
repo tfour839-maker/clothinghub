@@ -14,7 +14,7 @@ export default function ShippingPolicyPage() {
           <section>
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">1. Shipping Coverage</h2>
             <p>
-              CLOTHS HUB currently ships to all serviceable pin codes across India. We partner with leading logistics 
+              CLOTHES HUB currently ships to all serviceable pin codes across India. We partner with leading logistics 
               providers to ensure safe and timely delivery of your orders. We do not offer international shipping at this time.
             </p>
           </section>

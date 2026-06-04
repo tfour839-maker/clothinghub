@@ -14,7 +14,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">1. Introduction</h2>
             <p>
-              CLOTHS HUB Pvt. Ltd. ("CLOTHS HUB", "we", "our", "us") is committed to protecting the privacy and 
+              CLOTHES HUB Pvt. Ltd. ("CLOTHES HUB", "we", "our", "us") is committed to protecting the privacy and 
               security of your personal information. This Privacy Policy explains how we collect, use, share, and protect 
               information obtained from users ("you", "your") of our website www.clothshub.online (the "Site").
             </p>

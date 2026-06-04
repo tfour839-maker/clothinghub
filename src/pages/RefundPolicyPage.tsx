@@ -14,7 +14,7 @@ export default function RefundPolicyPage() {
           <section>
             <h2 className="font-display text-xl font-semibold text-charcoal mb-3">1. Return Policy Overview</h2>
             <p>
-              At CLOTHS HUB, we want you to be completely satisfied with your purchase. If you are not happy with your 
+              At CLOTHES HUB, we want you to be completely satisfied with your purchase. If you are not happy with your 
               order, we offer a <strong>7-day return policy</strong> from the date of delivery. You may request a return 
               or exchange within 7 calendar days of receiving your order.
             </p>
