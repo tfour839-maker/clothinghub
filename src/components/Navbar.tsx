@@ -70,7 +70,7 @@ export default function Navbar() {
             onClick={closeMenus}
             className="font-display text-xl sm:text-2xl font-semibold tracking-wide text-charcoal hover:text-gold transition-colors duration-300"
           >
-            CLOTHS HUB
+            CLOTHES HUB
           </Link>
 
           {/* Desktop Nav Links */}
